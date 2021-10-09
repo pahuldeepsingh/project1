@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:latestkkkkkkkk
 RUN yum install httpd
 WORKDIR /var/www/html
 RUN echo "Hello" > index.html

@@ -1,5 +1,5 @@
-FROM centos:latestdddd
-RUN yum install httpd
+FROM centos:latest
+RUN yum install httpd -y
 WORKDIR /var/www/html
 RUN echo "Hello" > index.html
 EXPOSE 80

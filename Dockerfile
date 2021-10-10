@@ -5,7 +5,7 @@ WORKDIR /var/www/html/
 RUN unzip cosmix.zip
 RUN rm -rf cosmix.zip &&\
     cp -rf cosmix/* . &&\
-    rm -rf cosmix
+    rm -rf cosmix &&\
     mkdir gaurav &&\
     touch gaurav/saluja
 EXPOSE 80

@@ -7,6 +7,6 @@ RUN rm -rf cosmix.zip &&\
     cp -rf cosmix/* . &&\
     rm -rf cosmix &&\
     mkdir gaurav &&\
-    touch gaurav/saluja
+    touch gaurav/salujasir
 EXPOSE 80
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]

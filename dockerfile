@@ -1,6 +1,6 @@
 FROM centos:latest
-RUN yum install httpd -y
+RUN yum install httpd
 WORKDIR /var/www/html
 RUN echo "Hello" > index.html
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
-ENTRYPOINT /usr/sbin/httpd -D FOREGROUND
